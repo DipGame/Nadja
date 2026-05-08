@@ -1,0 +1,48 @@
+<div class="popup popup-form" id="popup-form" aria-hidden="true">
+    <div class="popup-form-overlay" data-popup-close></div>
+    <div class="popup-form-container" role="dialog" aria-modal="true" aria-labelledby="popup-form-title">
+        <button class="popup-form-close-btn" type="button" data-popup-close aria-label="Закрыть форму">
+            <svg class="popup-form-close-btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <rect width="24" height="24" fill="white"></rect>
+                    <path d="M7 17L16.8995 7.10051" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                    <path d="M7 7.00001L16.8995 16.8995" stroke="#000000" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+        </button>
+
+        <h3 class="popup-form-title" id="popup-form-title">Оставить заявку</h3>
+
+        <form class="popup-form-form" data-form>
+            <div class="main-form-form-item-container">
+                <div data-error class="main-form-form-item">
+                    <input class="main-form-form-item-input" data-required data-min="2" type="text" name="name"
+                        placeholder="Как вас зовут?">
+                    <span class="main-form-form-item-error">
+                        Неверный формат поля
+                    </span>
+                </div>
+                <div data-error class="main-form-form-item">
+                    <input class="main-form-form-item-input" data-required data-mask type="text" name="phone"
+                        placeholder="Телефон">
+                    <span class="main-form-form-item-error">
+                        Неверный формат поля
+                    </span>
+                </div>
+            </div>
+            <div data-error class="popup-checkbox-container">
+                <label for="popup-form-checkbox" class="popup-checkbox-label">
+                    <input data-required data-checkbox id="popup-form-checkbox" name="checkbox" type="checkbox">
+                    <span class="popup-checkbox-ui" aria-hidden="true"></span>
+                </label>
+                <div class="popup-form-politic">Даю согласие на <a href="#">обработку персональных данных</a></div>
+            </div>
+
+            <button class="button main-form-form-submit popup-form-submit" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,124 @@
+.main-stocks-swiper {
+  overflow: hidden;
+}
+
+.main-stocks-section {
+  overflow: hidden;
+}
+
+.main-stocks-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 416px;
+  min-height: 397px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  flex-shrink: 0;
+  background-color: #f6f7fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+}
+
+.main-stocks-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.main-stocks-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(60, 43, 153, 0) 62.01%,
+    #3c2b99 100%
+  );
+}
+
+.main-stocks-card-badge {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  background-color: var(--link-color);
+  padding: 10px 12px;
+  border-radius: 30px;
+  width: fit-content;
+}
+
+.main-stocks-card-title {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.main-stocks-card:hover .main-stocks-card-img,
+.main-stocks-card:focus-visible .main-stocks-card-img {
+  transform: scale(1.03);
+}
+
+.main-stocks-card:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+.main-stocks-swiper-pagination {
+  position: static;
+  margin-top: 30px;
+}
+
+@media (max-width: 720px) {
+  .main-stocks-section {
+    padding-left: 0;
+    padding-right: 0;
+
+    .def-title-v1 {
+      padding-left: var(--def-padding);
+      padding-right: var(--def-padding);
+    }
+  }
+
+  .main-stocks-swiper {
+    padding: 0 var(--def-padding);
+    width: 100%;
+  }
+  .main-stocks-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-stocks-card {
+    max-width: 316px;
+    min-height: 301px;
+  }
+
+  .main-stocks-card-title {
+    font-size: 24px;
+  }
+
+  .main-stocks-card-badge {
+    font-size: 14px;
+  }
+}

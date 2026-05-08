@@ -1,0 +1,79 @@
+.popup {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.35s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+.popup-form-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 18, 35, 0.5);
+}
+
+.popup-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 32px);
+  max-width: 520px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.popup-form-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.popup-form-close-btn-icon {
+  width: 32px;
+  height: 32px;
+
+  path {
+    stroke: var(--link-color);
+  }
+}
+
+.popup-form-title {
+  margin-bottom: 20px;
+  padding-right: 44px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.popup-form-form .popup-checkbox-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.popup-form-submit {
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .popup-form-container {
+    border-radius: 16px;
+    padding: 20px 16px;
+  }
+
+  .popup-form-title {
+    font-size: 24px;
+  }
+}

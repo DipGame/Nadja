@@ -1,0 +1,162 @@
+.zabol-detail {
+  display: flex;
+  gap: 24px;
+}
+
+.zabol-detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.zabol-detail-author-banner {
+  background-color: #f6f7fc;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.zabol-detail-author-banner-top {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+
+  img {
+    max-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+    min-width: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}
+
+.zabol-detail-author-banner-top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: auto 0;
+}
+
+.zabol-detail-author-banner-top-content-title {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.zabol-detail-author-banner-top-content-description {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #4b5563;
+}
+
+.zabol-detail-author-banner-default {
+  margin-bottom: 24px;
+}
+
+.zabol-detail-author-banner-bottom {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  span {
+    color: #64748b;
+  }
+}
+
+.zabol-detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.zabol-detail-content-title {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.zabol-detail-content-text {
+  gap: 24px;
+
+  img {
+    width: 100%;
+    max-width: 656px;
+    border-radius: 16px;
+  }
+
+  
+}
+
+.zabol-detail-right {
+  width: 100%;
+  max-width: 306px;
+  height: auto;
+}
+.zabol-detail-menu-tabs {
+  width: 100%;
+  max-width: 306px;
+  background-color: #f6f7fc;
+  border-radius: 16px;
+  padding: 24px 20px;
+  height: fit-content;
+}
+
+.zabol-detail-menu-tabs-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #cbd5e1;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: block;
+
+  &.active {
+    color: var(--link-color);
+  }
+}
+
+.zabol-detail-menu-tabs-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.zabol-detail-menu-tabs-item:first-child {
+  padding-top: 0;
+}
+
+@media (max-width: 720px) {
+  .zabol-detail-anchors {
+    background-color: #f6f7fc;
+
+    .uzi-anchors-item {
+      padding: 16px;
+      font-size: 16px;
+      border-bottom: none;
+
+      &.active {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .zabol-detail {
+    padding-top: 32px;
+  }
+
+  .zabol-detail-author-banner {
+    padding: 24px var(--def-padding);
+  }
+}

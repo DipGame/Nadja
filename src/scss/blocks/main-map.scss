@@ -1,0 +1,176 @@
+.main-map {
+  display: flex;
+  gap: 24px;
+}
+
+.main-map-section {
+  background-color: #FFF;
+}
+
+.main-map-left {
+  background-color: #f6f7fc;
+  border-radius: 20px;
+  padding: 24px;
+  width: 100%;
+  max-width: 416px;
+  height: auto;
+}
+
+.main-map-right {
+  height: auto;
+  min-height: 490px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.main-map-left-filial-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none'%3E%3Cpath d='M1 1.5L7 7.5L13 1.5' stroke='%230B1223' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 20px center !important;
+  background-size: 14px 9px !important;
+}
+
+.main-map-left-filial-select::-ms-expand {
+  display: none;
+}
+
+.main-map-left-filial-select:focus,
+.main-map-left-filial-select:focus-visible,
+.main-map-left-filial-select:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: inherit !important;
+}
+
+.main-map-left-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.main-map-left-filial-select {
+  width: 100%;
+  background-color: #fff;
+  padding: 16px 48px 16px 20px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 54px;
+}
+
+.main-map-left-content {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main-map-left-content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.main-map-left-content-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.main-map-left-content-info-item-title {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #475569;
+}
+
+.main-map-left-content-info-item-value {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: 0%;
+
+  * {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+}
+
+/* Не завязываемся на служебные ymaps-классы: растягиваем карту через контейнер и тег. */
+#map {
+  height: 100%;
+
+  > ymaps,
+  > ymaps > ymaps,
+  > ymaps > ymaps > ymaps {
+    height: 100% !important;
+    min-height: 100% !important;
+  }
+}
+
+@media (max-width: 970px) {
+  .main-map {
+    flex-direction: column;
+  }
+
+  .main-map-left {
+    max-width: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .main-map-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-map {
+    gap: 0px;
+  }
+
+  .main-map-left {
+    padding: 24px 0;
+    border-radius: 20px 20px 0 0;
+    background-color: #f6f7fc;
+  }
+
+  .main-map-left-header {
+    padding: 0 var(--def-padding);
+  }
+
+  .main-map-right {
+    min-height: 368px;
+    border-radius: 0;
+  }
+
+  .main-map-left-title {
+    margin-bottom: 20px;
+  }
+
+  .main-map-left-content {
+    gap: 12px;
+    padding: 20px var(--def-padding);
+    background-color: #fff;
+  }
+}

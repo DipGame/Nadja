@@ -1,0 +1,246 @@
+.main-specialists-section:not(.main-specialists-section-v2) {
+  background-color: #f6f7fc;
+}
+
+.main-specialists__tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.main-specialists-section-v2 {
+  .main-specialists__tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .def-tabs-v1 {
+      .def-tabs-cont {
+        background-color: #f6f7fc;
+        gap: 8px;
+        min-height: 54px;
+      }
+    }
+  }
+}
+
+.main-specialists__tabs-content {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  max-width: 856px;
+
+  .main-map-left-filial-select {
+    width: 100%;
+    max-width: 346px;
+    cursor: pointer;
+    min-height: 54px;
+    border: 1px solid #94a3b8;
+    transition: .5s;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none'%3E%3Cpath d='M1 1.5L7 7.5L13 1.5' stroke='%2394A3B8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+    * {
+      transition: .5s;
+    }
+    
+
+    &:focus, &:focus-visible, &:hover {
+      border-color: var(--link-color) !important;
+      outline: none;
+    }
+  }
+}
+
+.main-specialists__content {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-specialists__item-list-item-link--hidden {
+  color: #94a3b8;
+}
+
+.main-specialists__form {
+  position: relative;
+  width: 100%;
+}
+
+.doctors-list__form {
+  margin-bottom: 30px;
+}
+
+.main-specialists__form-button-submit {
+  max-width: 131px;
+}
+
+.main-specialists__form-button {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  max-width: 24px;
+  max-height: 24px;
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.main-specialists__form-button-icon {
+  max-width: 24px;
+  max-height: 24px;
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.main-specialists__form-button-clear {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 24px;
+  max-height: 24px;
+  min-height: 24px;
+  min-width: 24px;
+  cursor: pointer;
+  display: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.main-specialists__form-input {
+  width: 100%;
+  height: 54px;
+  border-radius: 12px;
+  border: 1px solid #94a3b8;
+  padding-left: 48px;
+  padding-right: 20px;
+  background-color: #fff;
+  transition: 0.5s;
+
+  * {
+    transition: 0.5s;
+  }
+  &::placeholder {
+    color: #94a3b8;
+  }
+
+  &:focus {
+    border-color: var(--link-color);
+    outline: none;
+  }
+}
+
+.main-specialists__form:focus-within .main-specialists__form-button-clear,
+.main-specialists__form.has-value .main-specialists__form-button-clear {
+  display: block;
+}
+
+.main-specialists__list {
+  column-count: 3;
+  column-gap: 24px;
+
+  .button_v2 {
+    display: none;
+    font-size: 18px;
+    min-height: 54px;
+  }
+}
+
+.main-specialists__item {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  break-inside: avoid-column;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+.main-specialists__item-letter {
+  font-family: Google Sans;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: var(--link-color);
+}
+
+.main-specialists__item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .main-specialists__list {
+    .main-specialists__item:nth-child(n + 7) {
+      display: none;
+    }
+  }
+
+  .main-specialists__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .button_v2 {
+      display: flex;
+    }
+  }
+
+  .main-specialists__tabs-content {
+    flex-direction: column;
+  }
+
+  .main-specialists__tabs-content .main-map-left-filial-select, .main-specialists__form-button-submit {
+    max-width: none;
+  }
+
+  .main-specialists__item {
+    margin: 0;
+  }
+
+  .doctors-list__form {
+    margin-bottom: 50px;
+  }
+
+  .main-specialists {
+    .def-title-v1 {
+      padding-left: var(--def-padding);
+      padding-right: var(--def-padding);
+    }
+  }
+
+  .main-specialists__content {
+    margin: 0 var(--def-padding);
+  }
+
+  .main-specialists-section:not(.main-specialists-section-v2) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-specialists-section-v2 {
+    .def-tabs-v1 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .main-specialists__content {
+    padding: 24px var(--def-padding);
+  }
+
+  .main-specialists__form-input {
+    padding-right: 10px;
+  }
+}

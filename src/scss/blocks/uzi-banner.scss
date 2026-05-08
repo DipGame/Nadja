@@ -1,0 +1,196 @@
+.uzi-banner {
+  background: linear-gradient(
+    93.31deg,
+    rgba(237, 232, 254, 0.5) 0.01%,
+    rgba(226, 239, 255, 0.5) 49.04%,
+    rgba(227, 232, 252, 0.5) 100.01%
+  );
+  padding: 48px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 418px;
+}
+
+.doctors-detail-banner-section {
+  margin-bottom: 50px;
+
+  .uzi-banner-title {
+    margin-bottom: 16px;
+  }
+
+  .uzi-banner-right {
+    max-width: 416px;
+    aspect-ratio: 1/1;
+    height: fit-content;
+  }
+
+  .uzi-banner-content {
+    color: #475569;
+
+    * {
+      color: #475569;
+    }
+  }
+}
+
+.uzi-banner-left {
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+}
+
+.doctors-detail-banner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 29px;
+  margin-bottom: 32px;
+}
+
+.uzi-banner-v2 {
+  .uzi-banner-title {
+    margin-bottom: 34px;
+  }
+}
+
+.uzi-banner-title {
+  margin-bottom: 10px;
+}
+
+.uzi-banner-content {
+  margin-bottom: 25px;
+}
+
+.uzi-banner-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+
+  li {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.uzi-banner-tag-icon {
+  max-width: 24px;
+  max-height: 24px;
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.uzi-banner-price {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 32px;
+  letter-spacing: 0%;
+  white-space: nowrap;
+}
+
+.uzi-banner-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.uzi-banner-button {
+  max-width: none;
+  width: fit-content;
+  padding: 18px 30px;
+}
+
+.uzi-banner-right {
+  width: -webkit-fill-available;
+  height: auto;
+  max-height: 450px;
+}
+
+.uzi-banner-right-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+}
+
+@media (max-width: 970px) {
+  .uzi-banner-section {
+    padding: 0;
+  }
+  .uzi-banner {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 720px) {
+  .uzi-banner-right-img {
+    aspect-ratio: 375/240;
+    max-height: none;
+    border-radius: 0;
+  }
+
+  .uzi-banner {
+    padding: 0;
+    overflow: hidden;
+    justify-content: start;
+    gap: 0;
+  }
+
+  .uzi-banner-left {
+    padding: 24px var(--def-padding);
+  }
+
+  .uzi-banner-content {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 970px) {
+  .doctors-detail-banner-section {
+    .uzi-banner-right {
+      margin: 0 auto;
+
+      img {
+        border-radius: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .doctors-detail-banner-section {
+    margin-bottom: 0;
+
+    .uzi-banner {
+      padding: 24px var(--def-padding);
+      border-radius: 0;
+    }
+
+    .uzi-banner-left {
+      padding: 24px 0 0;
+    }
+
+    .uzi-banner-title {
+      margin-bottom: 0;
+    }
+  }
+
+  .doctors-detail-banner-info {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .doctors-detail-banner-section {
+    .uzi-banner-button {
+      width: 100%;
+      max-width: none;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.zabol-list {
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 20px;
+
+  .main-specialists__tabs-content {
+    max-width: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .zabol-list-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .zabol-list {
+    padding: 24px var(--def-padding);
+
+    .main-specialists__list .main-specialists__item:nth-child(n+7) {
+        display: flex;
+    }
+  }
+}

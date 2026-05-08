@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./fonts/GoogleSans.css" />
+
+    <link rel="stylesheet" href="./css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/nouislider.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2e485074-4e7a-4d9b-9e83-432aa96ddebf&lang=ru_RU"
+        type="text/javascript"></script>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body class="">
+    @@include('blocks/header.html')
+    <main>
+
+        <div class="bread flex padding" id="bread">
+            <ul class="def_div" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+
+                <li id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+
+                    <a href="/" title="Главная" itemprop="item">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="13.359" y1="3.00287" x2="7.00261" y2="16.0354" stroke="#D1D5DB" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                </li>
+                <li id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+
+                    <a href="/doctors.html" title="Врачи" itemprop="item">
+                        <span itemprop="name">Врачи</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="13.359" y1="3.00287" x2="7.00261" y2="16.0354" stroke="#D1D5DB" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                </li>
+                <li id="bx_breadcrumb_2" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <span class="bread-item-active" itemprop="name">Смоленцев  Максим Михайлович</span>
+                    <meta itemprop="position" content="3">
+                </li>
+            </ul>
+        </div>
+
+        @@include('blocks/doctors-detail-banner.html')
+        @@include('blocks/doctors-detail-anchors.html')
+        @@include('blocks/doctors-detail-education-courses.html')
+        @@include('blocks/doctors-detail-services.html')
+
+        @@include('blocks/main-form.html')
+        @@include('blocks/main-map.html')
+
+    </main>
+    @@include('blocks/footer.html')
+
+    <div id="isAdmin" style="display: none;">
+
+    </div>
+    <!-- <script>
+		new isvek.Bvi({
+			target: '.bvi-open',
+			fontSize: 14,
+			theme: 'white'
+		});
+	</script> -->
+
+    @@include('blocks/popup-form.html')
+
+    <div class="rezult-form">
+        <div class="rezult-form-container">
+
+            <svg class="rezult-form-close-btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <rect width="24" height="24" fill="white"></rect>
+                    <path d="M7 17L16.8995 7.10051" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+                    </path>
+                    <path d="M7 7.00001L16.8995 16.8995" stroke="#000000" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+
+            <div class="rezult-form-container-title">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/addSwiper.js"></script>
+    <script src="./js/copyElements.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+
+</html>

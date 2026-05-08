@@ -1,0 +1,31 @@
+.press-center-detail-info {
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  padding: 48px;
+
+  .default {
+    gap: 32px;
+
+    div:not(.default div div) {
+      gap: 16px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .press-center-detail-info-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .press-center-detail-info {
+    border-radius: 0;
+    padding: 24px var(--def-padding);
+
+    
+  }
+}

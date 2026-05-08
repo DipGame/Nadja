@@ -1,0 +1,219 @@
+@media (min-width: 971px) {
+  .about-story-section {
+    background-color: #f6f7fc;
+
+    --gap-story-content: 190px;
+  }
+
+  .about-story {
+    max-width: 1076px;
+  }
+
+  .about-story-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-story-content-item {
+    position: relative;
+    height: var(--gap-story-content);
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-story-content-item-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    transform: translate(0, -50%);
+
+    .default {
+      padding: 24px;
+      border-radius: 12px;
+      background-color: #fff;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .about-story-content-item:nth-child(even) {
+    .about-story-content-item-container {
+      left: auto;
+      right: 50%;
+      flex-direction: row-reverse;
+    }
+  }
+
+  .about-story-content-item:first-child {
+    margin-top: 13px;
+  }
+
+  .about-story-content-item:nth-last-child(2) {
+    margin-bottom: 107px;
+
+    .about-story-content-line {
+      display: none;
+    }
+  }
+
+  .about-story-content-item-point-container {
+    height: fit-content;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    min-height: 0px;
+    min-width: 0px;
+  }
+
+  .about-story-content-item-point {
+    max-width: 40px;
+    max-height: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .about-story-content-item-year {
+    font-weight: 600;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 32px;
+    letter-spacing: 0%;
+    white-space: nowrap;
+    margin-left: 30px;
+    margin-right: 24px;
+  }
+
+  .about-story-content-line {
+    height: calc(var(--gap-story-content));
+    width: 4px;
+    background-color: #3c2b99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 0);
+  }
+
+  .about-story-content {
+    .about-story-content-item:last-child {
+      .about-story-content-line {
+        display: none;
+      }
+    }
+  }
+
+  .about-story-content-item:last-child {
+    display: none;
+  }
+
+  .about-story-content-button-container {
+    display: none;
+  }
+}
+
+@media (max-width: 970px) {
+  .about-story-section {
+    background-color: #f6f7fc;
+  }
+
+  .about-story-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-story-content-item {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .about-story-content-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-story-content-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 46px;
+
+    .default {
+      padding: 24px;
+      border-radius: 20px;
+      background-color: #fff;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .about-story-content-item-point-container {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .about-story-content-item-point {
+    max-width: 40px;
+    max-height: 40px;
+    min-height: 40px;
+    min-width: 40px;
+  }
+
+  .about-story-content-line {
+    height: calc(100% + 2px);
+    width: 4px;
+    background-color: #3c2b99;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 29px);
+  }
+
+  .about-story-content-item-year {
+    font-weight: 600;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 32px;
+    letter-spacing: 0%;
+  }
+
+  .about-story-content-item:last-child {
+    height: 40px;
+  }
+
+  .about-story-content-button-container .about-story-content-button {
+    max-width: 375px;
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 720px) {
+  .about-story-content-item-container .default {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 22px;
+    letter-spacing: 0%;
+
+    * {
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 14px;
+      leading-trim: NONE;
+      line-height: 22px;
+      letter-spacing: 0%;
+    }
+  }
+}

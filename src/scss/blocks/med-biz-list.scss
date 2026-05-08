@@ -1,0 +1,114 @@
+.med-biz-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.med-biz-list-item {
+  border-radius: 20px;
+  padding: 32px 24px;
+  background-color: #f0f3f8;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.med-biz-list-item-img {
+  aspect-ratio: 588/343;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.med-biz-list-item-title {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 32px;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+
+.med-biz-list-item-text {
+  margin-bottom: 24px;
+}
+
+.med-biz-list-item-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.med-biz-list-item-bottom-text {
+  font-weight: 600;
+}
+
+.med-biz-list-item-bottom-link {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--link-color);
+  transition: 0.5s;
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+.med-biz-list-item-bottom-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.med-biz-list-item-bottom-info-item {
+    font-size: 18px;
+}
+
+.med-biz-list-item-bottom-info-item-text {
+    font-size: 14px;
+    color: #4B5563;
+}
+
+@media (max-width: 720px) {
+    .med-biz-list-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+      }
+      
+      .med-biz-list-item {
+        padding: var(--def-padding);
+      }
+      
+      .med-biz-list-item-img {
+        aspect-ratio: 311/181;
+      }
+      
+      .med-biz-list-item-title {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      
+      .med-biz-list-item-text {
+        margin-bottom: 30px;
+      }
+      
+      .med-biz-list-item-bottom-link {
+        font-size: 18px;
+      }
+      
+      .med-biz-list-item-bottom-info {
+          display: flex;
+          flex-direction: column;
+      }
+      
+      .med-biz-list-item-bottom-info-item {
+          font-size: 16px;
+      }
+      
+}

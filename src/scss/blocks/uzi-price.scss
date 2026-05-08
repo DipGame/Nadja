@@ -1,0 +1,123 @@
+.uzi-price-section {
+  background-color: #f6f7fc;
+}
+
+.uzi-price__item-title {
+  margin-bottom: 20px;
+}
+
+.uzi-price__item-content {
+  display: grid;
+  grid-template-columns: 120px 1fr 92px 129px;
+  align-items: center;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.uzi-price__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  .uzi-price__item:last-child {
+    .uzi-price__item-content:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.uzi-price__item-content-title,
+.uzi-price__item-content-code {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #64748b;
+  padding: 12px 0;
+}
+
+.uzi-price__item-content-code:not(.uzi-price__item-content-title) {
+  padding-right: 20px;
+}
+
+.uzi-price__item-content-name:not(.uzi-price__item-content-title) {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding-right: 20px;
+}
+
+.uzi-price__item-content-price:not(.uzi-price__item-content-title) {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0%;
+  white-space: nowrap;
+}
+
+.uzi-price__item-content-button {
+  min-height: 48px;
+  margin: 12px 0;
+  padding: 14px 18px;
+}
+
+@media (max-width: 720px) {
+  .uzi-price-section {
+    padding-left: 0;
+    padding-right: 0;
+
+    .main-specialists__content {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .def-title-v1 {
+      padding-left: var(--def-padding);
+      padding-right: var(--def-padding);
+    }
+  }
+
+  .uzi-price__item-content {
+    grid-template-columns: 78px 1fr 1fr;
+    align-items: start;
+    padding-bottom: 12px;
+  }
+
+  .uzi-price__item-content-header {
+    display: none;
+  }
+
+  .uzi-price__item-content-code:not(.uzi-price__item-content-title) {
+    padding-right: 16px;
+  }
+
+  .uzi-price__item-content-name:not(.uzi-price__item-content-title) {
+    padding-right: 0;
+    grid-column: 2 span;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .uzi-price__item-content-price:not(.uzi-price__item-content-title) {
+    margin: auto 0;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    grid-column: 2/3;
+    margin-left: auto;
+  }
+
+  .uzi-price__item-content-button {
+    margin: 0;
+    padding: 14px 18px;
+    min-width: 133px;
+  }
+
+
+}

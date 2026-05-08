@@ -1,0 +1,48 @@
+<section class='padding flex main-form-section'>
+    <div class='def_div main-form'>
+        <div class="main-form-left">
+            <div class="main-form-left-title">
+                Подберём врача
+                и запишем на приём
+            </div>
+            <div class="default">
+                Заполните форму, и мы свяжемся с вами
+                в ближайшее время для записи или консультации
+                по интересующему вас вопросу
+            </div>
+        </div>
+
+        <img src="./img/foto-form.png" alt="" class="main-form-img">
+
+        <div class="main-form-right">
+            <form class="main-form-form" data-form>
+                <div class="main-form-form-item-container">
+                    <div data-error class="main-form-form-item">
+                        <input class="main-form-form-item-input" data-required data-min="2" type="text" name="name" placeholder="Как вас зовут?">
+                        <span class="main-form-form-item-error">
+                            Неверный формат поля
+                        </span>
+                    </div>
+                    <div data-error class="main-form-form-item">
+                        <input class="main-form-form-item-input" data-required data-mask type="text" name="phone" placeholder="Телефон">
+                        <span class="main-form-form-item-error">
+                            Неверный формат поля
+                        </span>
+                    </div>
+                </div>
+                <div data-error class="popup-checkbox-container">
+                    <label for="popup-checkbox" class="popup-checkbox-label">
+                        <input data-required data-checkbox id="popup-checkbox" name="checkbox" type="checkbox">
+                        <span class="popup-checkbox-ui" aria-hidden="true"></span>
+                    </label>
+                    <div class="popup-form-politic">Даю согласие на <a href="#">обработку персональных данных</a></div>
+                </div>
+
+                <button class="button main-form-form-submit" type="submit">
+                    Отправить
+                </button>
+
+            </form>
+        </div>
+    </div>
+</section>
